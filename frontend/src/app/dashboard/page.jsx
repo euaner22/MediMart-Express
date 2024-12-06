@@ -655,14 +655,228 @@ export default function dashboard(){
   </Box>
 </div>
 
-<React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="sm">
-        <Box sx={{ bgcolor: '#cfe8fc', 
-          position: '',
-          height: '300px', width: '1000px' }} />
-      </Container>
-    </React.Fragment>
+<Container
+  maxWidth="false"
+  sx={{
+    padding: 0, // Remove any padding
+    margin: 0,  // Remove any margin
+    width: "100%", // Full width container
+  }}
+>
+  <div>
+  <Box
+  sx={{
+    width: '100%', // Adjust to take up full width
+    height: 300,
+    borderRadius: 1,
+    bgcolor: '#C1BAA1',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    margin: 0, // Remove margin to eliminate space around
+    padding: '10px',  // Optional padding inside the box
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)' 
+  }}
+>
+
+<Box 
+    sx={{
+      width: 300,
+      height: 300,
+      borderRadius: 100,
+      bgcolor: '#FFFFFF',
+      flexDirection: 'column',  
+      display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    margin: '20px',
+    padding: '10px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)' 
+    }}
+  >
+    {/* Image */}
+    <img 
+      src="/store1.png" 
+      alt="store"
+      style={{
+        width: '100%',           
+        height: '70%',           
+        objectFit: 'cover',     
+        display: 'block',        
+        margin: '0',             
+        padding: '0',   
+      }}
+    />
+
+    {/* Text */}
+    <span 
+      style={{
+        fontSize: '16px',      
+        color: '#1E201E',        
+        textAlign: 'center',      
+        width: '100%',           
+        paddingTop: '10px',     
+        fontFamily: "Merriweather",
+      }}
+    >
+      <strong>Pickup in as little as 30 minutes</strong><br/>
+    </span>
+    <span style={{ textAlign: 'right' }}>
+      <Link href="login" underline="hover">
+        <strong><u>{'Shop Now'}</u></strong>
+      </Link>
+    </span>
+  </Box>
+  
+  <Box 
+    sx={{
+      width: 300,
+      height: 300,
+      borderRadius: 100,
+      bgcolor: '#FFFFFF',
+      flexDirection: 'column',  
+      display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    margin: '20px',
+    padding: '10px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)' 
+    }}
+  >
+    {/* Image */}
+    <img 
+      src="/time.png" 
+      alt="store"
+      style={{
+        width: '100%',           
+        height: '70%',           
+        objectFit: 'cover',     
+        display: 'block',        
+        margin: '0',             
+        padding: '0',   
+      }}
+    />
+
+    {/* Text */}
+    <span 
+      style={{
+        fontSize: '16px',      
+        color: '#1E201E',        
+        textAlign: 'center',      
+        width: '100%',           
+        paddingTop: '10px',     
+        fontFamily: "Merriweather",
+      }}
+    >
+      <strong>FREE 1-Hour Delivery on $35</strong><br/>
+    </span>
+  </Box>
+
+  <Box 
+    sx={{
+      width: 300,
+      height: 300,
+      borderRadius: 100,
+      bgcolor: '#FFFFFF',
+      flexDirection: 'column',  
+      display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    margin: '20px',
+    padding: '10px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)' 
+    }}
+  >
+    {/* Image */}
+    <img 
+      src="/calendar.png" 
+      alt="store"
+      style={{
+        width: '80%',           
+        height: '60%',           
+        objectFit: 'cover',     
+        display: 'block',        
+        margin: '0',             
+        padding: '0',   
+      }}
+    />
+
+    {/* Text */}
+    <span 
+      style={{
+        fontSize: '16px',      
+        color: '#1E201E',        
+        textAlign: 'center',      
+        width: '100%',           
+        paddingTop: '10px',     
+        fontFamily: "Merriweather",
+      }}
+    >
+      <strong>Weekly Ads</strong><br/>
+    </span>
+    <span style={{ textAlign: 'right' }}>
+      <Link href="login" underline="hover">
+        <strong><u>{'Shop Now'}</u></strong>
+      </Link>
+    </span>
+  </Box>
+
+  <Box 
+    sx={{
+      width: 300,
+      height: 300,
+      borderRadius: 100,
+      bgcolor: '#FFFFFF',
+      flexDirection: 'column',  
+      display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    margin: '20px',
+    padding: '10px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)' 
+    }}
+  >
+    {/* Image */}
+    <img 
+      src="/store1.png" 
+      alt="store"
+      style={{
+        width: '100%',           
+        height: '70%',           
+        objectFit: 'cover',     
+        display: 'block',        
+        margin: '0',             
+        padding: '0',   
+      }}
+    />
+
+    {/* Text */}
+    <span 
+      style={{
+        fontSize: '16px',      
+        color: '#1E201E',        
+        textAlign: 'center',      
+        width: '100%',           
+        paddingTop: '10px',     
+        fontFamily: "Merriweather",
+      }}
+    >
+      <strong>Join my Pharmamapapa® today</strong><br/>
+    </span>
+    <span style={{ textAlign: 'right' }}>
+      <Link href="login" underline="hover">
+        <strong><u>{'Shop Now'}</u></strong>
+      </Link>
+    </span>
+  </Box>
+</Box>  
+   </div>
+</Container>
 
 
 

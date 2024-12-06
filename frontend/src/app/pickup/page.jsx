@@ -103,7 +103,7 @@ export default function pickup(){
       padding: '10px 10px',        // Padding for better size
     }}
   >
-    <strong>30-minute Pickup</strong>
+    <strong>1 hour delivery</strong>
   </Button>
 
 </Box>
@@ -114,21 +114,77 @@ export default function pickup(){
     display: 'flex',           // Enables flexbox
     justifyContent: 'center',  // Centers content horizontally
     alignItems: 'center',      // Centers content vertically
-    height: '80vh',           // Full viewport height (adjust if needed)
-    backgroundColor: '#F5F5F5' // Optional background color for the container
+    height: '80vh',            // Full viewport height (adjust if needed)
+    backgroundColor: '#F5F5F5', // Optional background color for the container
+    position: 'relative',      // This allows absolute positioning of children
   }}
 >
   <img
     src="/capture.png"
     alt="capture"
     style={{
-      width: '80%',           // Adjust image width
-      height: '90%',         // Maintain aspect ratio
-      objectFit: 'cover',     // Ensures the image fills its box without distortion
+      width: '80%',            // Adjust image width
+      height: '90%',           // Maintain aspect ratio
+      objectFit: 'cover',      // Ensures the image fills its box without distortion
       borderRadius: '10px'
     }}
   />
+  
 </div>
+<Box
+    sx={{
+      width: 700,
+      height: 200,
+      bgcolor: '#FFFFFF',
+      position: 'absolute',  // Set to absolute to position at the bottom
+      bottom: '',             // Position it at the bottom of the parent container
+      left: '50%',           // Centers the box horizontally
+      transform: 'translateX(-50%)',  // Ensures the box is perfectly centered
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      margin: '20px',
+      marginTop: '-60px',
+      padding: '10px',
+      boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)',
+      borderRadius: '10px',
+    }}
+  >
+    <div
+  style={{
+    display: 'flex',
+    justifyContent: 'center', // Centers content horizontally
+    alignItems: 'center',     // Centers content vertically
+    height: '100vh',          // Ensure the parent div takes full viewport height
+  }}
+>
+  <p
+    style={{
+      fontSize: '30px',
+      color: '#133E87',
+      textAlign: 'center',     // Centers text horizontally
+    }}
+  >
+    <strong>30-minute Pickup*</strong><br />
+    <strong style={{fontSize:'20px'}}>order ready in as little as 30 minutes*</strong><br/>
+
+    <Button
+    style={{
+      color: '#133E87',              // Text color
+      fontSize: '16px',            // Font size
+      backgroundColor: '#FFFFFF', // Background color
+      border: '2px solid #133E87', // Border
+      borderRadius: '25px',        // Rounded corners
+      padding: '10px 10px',        // Padding for better size
+    }}
+  >
+    <strong>How it works?</strong>
+  </Button>
+
+  </p>
+</div>
+  </Box>
+
 
     </Paper>
 
